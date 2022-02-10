@@ -28,14 +28,14 @@ if (aff1perso.classe == "Géo") {
     document.querySelector(".btn1").style.color = "#FFBD35";
 }
 if (aff1perso.classe == "Hydro") {
-    document.getElementById("body").style.backgroundColor = "#009DAE"
+    document.getElementById("body").style.backgroundColor = "#009DAE";
     document.querySelector(".btn1").style.color = "#079ED4";
 }
 if (aff1perso.classe == "Anémo") {
-    document.getElementById("body").style.backgroundColor = "#A3DA8D"
+    document.getElementById("body").style.backgroundColor = "#A3DA8D";
     document.querySelector(".btn1").style.color = "#30B28A";
 }
 if (aff1perso.classe == "Cryo") {
-    document.getElementById("body").style.backgroundColor = "#C8F2EF"
+    document.getElementById("body").style.backgroundColor = "#C8F2EF";
     document.querySelector(".btn1").style.color = "#92E1E5";
 }

@@ -137,6 +137,15 @@ p {
         top: 55%;
     }
 
+    .topCard {
+        height: 196px;
+    }
+
+    .name {
+        bottom: 10px;
+        left: 15px;
+    }
+
     .btn-a {
         width: 155px;
     }
@@ -144,15 +153,20 @@ p {
 
 @media screen and (max-width: 380px)  {
     .card {
-        height: 510px
+        height: 480px;
+        padding: 7px;
+    }
+
+    .topCard {
+        height: 180px;
     }
 
     .card-body {
-        padding: 1rem 1rem 0.5rem 1rem;
+        padding: 1rem 1rem 0.4rem 1rem;
     }
 
     p {
-        margin-bottom: 0.8rem;
+        margin-bottom: 0.7rem;
     }
 
     .btn-a {
