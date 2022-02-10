@@ -1,0 +1,142 @@
+@font-face {
+    font-family: "Century Gothic";
+    src: url(../Fonts/07558_CenturyGothic.ttf);
+
+    font-family: "Semplicita";
+    src: url(../Fonts/semplicitapro-bold.otf);
+}
+
+p {
+    font-family: "Semplicita";
+}
+
+.card {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    background: #f1f1f1;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    box-shadow: 0px 0px 20px #000000b3;
+}
+
+.topCard {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.topCard img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cover {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+.element {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.name {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-family: "Century Gothic";
+    line-height: 1.1;
+}
+
+.last {
+    display: block;
+    font-size: 36px;
+}
+
+.first {
+    display: block;
+    font-size: 48px;
+}
+
+.cardFooter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 60px;
+    background: none;
+    border: 4px solid;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: "Semplicita";
+    position: relative;
+    cursor: pointer;
+}
+
+/* Création des deux petits éléments qui serviront à l'animation des boutons */
+.btn-a::before, .btn-a::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 6px;
+    background: #f1f1f1;
+    transform: skewX(50deg);
+    transition: .4s linear;
+}
+
+/* Placement des deux petits éléments qui serviront à l'animation des boutons */
+.btn-a::before {
+    top: -5px;
+    left: 10%;
+}
+
+.btn-a::after {
+    bottom: -5px;
+    right: 10%;
+}
+/**/
+
+/* Animation des deux petits éléments */
+.btn-a:hover::before {
+    left: 80%;
+}
+
+.btn-a:hover::after {
+    right: 80%;
+}
+/**/
+.btn2 {
+    color: red;
+}
+
+.btn2:hover {
+    color: red;
+}
+
+@media screen and (max-width: 400px)  {
+    .card {
+        width: 350px;
+        height: 550px;
+        top: 55%;
+    }
+
+    .btn-a {
+        width: 155px;
+    }
+}

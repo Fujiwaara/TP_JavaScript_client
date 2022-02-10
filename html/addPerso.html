@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Création de personnage</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/addPerso.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">Retour</a>                
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="#">Créer un personnage</a>
+                            <a class="nav-link" href="./listePerso.html">Mes personnages</a>                        
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <h1 class="d-flex justify-content-center">Création d'un personnage</h1>
+        
+        <form action="../index.html" class="w-50 mx-auto">
+            <div class="mb-3">
+                <label for="nom">Nom</label>
+                <select class="form-select" id="nom">
+                    <option selected value="sansChoix">Choisissez un personnage</option>
+                    <option value="Ningguang">Ningguang</option>
+                    <option value="Hu Tao">Hu Tao</option>
+                    <option value="Diluc">Diluc</option>
+                    <option value="Shogun Raiden">Shogun Raiden</option>
+                    <option value="Barbara">Barbara</option>
+                    <option value="Kamisato Ayaka">Kamisato Ayaka</option>
+                    <option value="Xiao">Xiao</option>
+                    <option value="Zhongli">Zhongli</option>
+                    <option value="Kaedehara Kazuha">Kaedehara Kazuha</option>
+                    <option value="Yoimiya">Yoimiya</option>
+                    <option value="Razor">Razor</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="classe">Classe</label>
+                <select class="form-select" id="classe">
+                    <option selected value="sansChoix">Choisissez une classe</option>
+                    <option value="Pyro">Pyro</option>
+                    <option value="Électro">Électro</option>
+                    <option value="Géo">Géo</option>
+                    <option value="Hydro">Hydro</option>
+                    <option value="Anémo">Anémo</option>
+                    <option value="Cryo">Cryo</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="arme">Arme</label>
+                <select class="form-select" id="arme">
+                    <option selected value="sansChoix">Choisissez une arme</option>
+                    <option value="Arc">Arc</option>
+                    <option value="Épée à une main">Épée à une main</option>
+                    <option value="Épée à deux mains">Épée à deux mains</option>
+                    <option value="Catalyseur">Catalyseur</option>
+                    <option value="Lance">Lance</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="endurance" class="form-label">Endurance</label>
+                <input type="number" class="form-control" id="endurance">
+            </div>
+            <div class="mb-3">
+                <label for="force" class="form-label">Force</label>
+                <input type="number" class="form-control" id="force">
+            </div>
+            <div class="mb-3">
+                <label for="agilite" class="form-label">Agilité</label>
+                <input type="number" class="form-control" id="agilite">
+            </div>
+            <div class="mb-3">
+                <label for="intelligence" class="form-label">Intelligence</label>
+                <input type="number" class="form-control" id="intelligence">
+            </div>
+            <button class="btn btn-primary" onclick="createPerso()">Créer</button>
+        </form>
+
+        <script src="../js/functions.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>

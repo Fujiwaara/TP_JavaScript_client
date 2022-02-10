@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Création de personnage</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">Retour</a>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">                        
+                            <a class="nav-link" href="../html/addPerso.html">Créer un personnage</a>
+                            <a class="nav-link active" aria-current="page" href="#">Mes personnages</a>                        
+                        </div>
+                    </div>                
+                </div>
+            </nav>
+        </header>
+
+        <div class="theme container-fluid p-0">
+            <div class="p-5">
+                <h1 class="display-3">Mes personnages</h1>
+            </div>
+        </div>
+
+        <div>
+            <table class="table table-dark table-hover mt-5">
+                <thead>
+                    <tr>
+                        <th scope="col">Index</th>
+                        <th scope="col">Nom</th>
+                        <th scope="col">Classe</th>
+                        <th scope="col">Arme</th>
+                    </tr>
+                </thead>
+                <tbody id="container_table">
+                </tbody>
+            </table>
+        </div>
+        <script src="../js/functions.js"></script>  
+        <script src="../js/listePerso.js"></script>      
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>

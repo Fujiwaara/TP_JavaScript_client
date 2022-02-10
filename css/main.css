@@ -1,0 +1,132 @@
+@font-face {
+    font-family: "Century Gothic";
+    src: url(../Fonts/07558_CenturyGothic.ttf);
+}
+
+body {
+    min-height: 99vh;
+    background-image: url(../Images/coverteyvat.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.theme {
+    /*background: #A1CAE2;*/
+    opacity: 0.5;
+}
+
+h1, .lead {
+    color: black;
+}
+
+.alert {
+    display: none;
+}
+
+.active {
+    font-weight: 600;
+}
+
+.card {
+    margin-top: 15px;
+    width: 350px;
+}
+
+.topCard {
+    height: 270px;
+    overflow: hidden;
+    position: relative;
+}
+
+.topCard img {
+    height: 150%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cover {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+.element {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+p {
+    margin-bottom: .7rem;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 60px;
+    background: none;
+    border: 4px solid;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: "Semplicita";
+    position: relative;
+    cursor: pointer;
+}
+
+/* Création des deux petits éléments qui serviront à l'animation des boutons */
+.btn-a::before, .btn-a::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 6px;
+    background: #f1f1f1;
+    transform: skewX(50deg);
+    transition: .4s linear;
+}
+
+/* Placement des deux petits éléments qui serviront à l'animation des boutons */
+.btn-a::before {
+    top: -5px;
+    left: 10%;
+}
+
+.btn-a::after {
+    bottom: -5px;
+    right: 10%;
+}
+/**/
+
+/* Animation des deux petits éléments */
+.btn-a:hover::before {
+    left: 80%;
+}
+
+.btn-a:hover::after {
+    right: 80%;
+}
+/**/
+.btn2 {
+    color: red;
+}
+
+.btn2:hover {
+    color: red;
+}
+
+@media screen and (max-width: 390px)  {
+    .btn-a {
+        width: 140px;
+        height: 55px;
+    }
+}
