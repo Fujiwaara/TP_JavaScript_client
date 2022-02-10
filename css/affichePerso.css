@@ -140,3 +140,9 @@ p {
         width: 155px;
     }
 }
+
+@media screen and (max-width: 380px)  {
+    .card {
+        height: 525px
+    }
+}
