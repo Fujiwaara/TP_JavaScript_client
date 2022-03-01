@@ -52,6 +52,27 @@ function createCardAffichePerso(item, i) {
     if (item.nom == "Razor") {
         imgPerso.src = "../Images/Personnages/razor2.jpg";
     }
+    if (item.nom == "Voyageur") {
+        imgPerso.src = "../Images/Personnages/voyageur2.jpg";
+    }
+    if (item.nom == "Voyageuse") {
+        imgPerso.src = "../Images/Personnages/voyageur-voyageuse2.jpg";
+    }
+    if (item.nom[0]+item.nom[1] == "YaeMiko") {
+        imgPerso.src = "../Images/Personnages/yae-miko2.jpg";
+    }
+    if (item.nom[0]+item.nom[1] == "SangonomiyaKokomi") {
+        imgPerso.src = "../Images/Personnages/sangonomiya-kokomi2.jpg";
+    }
+    if (item.nom == "Fischl") {
+        imgPerso.src = "../Images/Personnages/fischl2.jpg";
+    }
+    if (item.nom == "Ganyu") {
+        imgPerso.src = "../Images/Personnages/ganyu2.png";
+    }
+    if (item.nom == "Shenhe") {
+        imgPerso.src = "../Images/Personnages/shenhe2.png";
+    }
 
     // Création de la div avec pour classe "cover"
     let divCover = document.createElement('div');
@@ -155,6 +176,8 @@ function createCardAffichePerso(item, i) {
     // la fonction supPerso(i) pour définir un index que l'on utilisera si on veut supprimer le personnage et ajout du texte pour le bouton
     let a2 = document.createElement('a');
     a2.classList.add("btn-a", "btn2");
+    a2.setAttribute("onclick", "supPerso("+i+")");
+    a2.setAttribute("href", "../index.html");
     a2.innerHTML = "Supprimer";
     
 

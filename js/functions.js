@@ -52,6 +52,27 @@ function createCard(item, i) {
     if (item.nom == "Razor") {
         imgPerso.src = "./Images/Personnages/razor1.jpg";
     }
+    if (item.nom == "Voyageur") {
+        imgPerso.src = "./Images/Personnages/voyageur1.jpg";
+    }
+    if (item.nom == "Voyageuse") {
+        imgPerso.src = "./Images/Personnages/voyageuse1.jpg";
+    }
+    if (item.nom[0]+item.nom[1] == "YaeMiko") {
+        imgPerso.src = "./Images/Personnages/yae-miko1.jpg";
+    }
+    if (item.nom[0]+item.nom[1] == "SangonomiyaKokomi") {
+        imgPerso.src = "./Images/Personnages/sangonomiya-kokomi1.jfif";
+    }
+    if (item.nom == "Fischl") {
+        imgPerso.src = "./Images/Personnages/fischl1.jpg";
+    }
+    if (item.nom == "Ganyu") {
+        imgPerso.src = "./Images/Personnages/ganyu1.jpg";
+    }
+    if (item.nom == "Shenhe") {
+        imgPerso.src = "./Images/Personnages/shenhe1.jpg";
+    }
 
     // Création de la div avec pour classe "cover"
     let divCover = document.createElement('div');
