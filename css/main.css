@@ -19,16 +19,12 @@ h1, .lead {
     color: black;
 }
 
-.alert {
-    display: none;
-}
-
 .active {
     font-weight: 600;
 }
 
 .card {
-    margin-top: 15px;
+    margin: 10px 0;
     width: 350px;
 }
 
