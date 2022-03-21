@@ -11,6 +11,13 @@ let personnages = recupListePersos();
 
 let aff1perso = personnages[indice];
 
+let title = document.querySelector("title");
+if (aff1perso.nom[1]) {
+    title.innerHTML = aff1perso.nom[0] + " " + aff1perso.nom[1];
+} else {
+    title.innerHTML = aff1perso.nom[0];
+}
+
 createCardAffichePerso(aff1perso, indice);
 
 // Condition d'affichage du background de body et de la couleur du l'élément avec pour classe "btn1"
